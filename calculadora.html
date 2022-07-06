@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <script>
+        function Somar(n1, n2){
+            return Number(n1) + Number(n2);
+        }
+        function Subtrair(n1, n2){
+            return Number(n1) - Number(n2);
+        }
+        function Multiplicar(n1, n2){
+            return Number(n1) * Number(n2);
+        }
+        function Dividir(n1, n2){
+            return Number(n1) / Number(n2);
+        }
+        var menu = "Menu\n 0 - Sair\n 1 - Somar\n 2 - Subtrair\n 3 - Multiplicar\n 4 - Dividir\n Informe a opção:";
+        var opcao = -1;
+        var n1 = 0;
+        var n2 = 0;
+
+        do{
+            opcao = parseInt(prompt(menu));
+            if (opcao == 1){
+                n1 = parseInt(prompt("Informe um número: "));
+                n2 = parseInt(prompt("Informe outro número: "));
+                alert(`Resultado da Adição: ${Somar(n1, n2)}`);
+            }
+            else if (opcao == 2){
+                n1 = parseInt(prompt("Informe um número: "));
+                n2 = parseInt(prompt("Informe outro número: "));
+                alert(`Resultado da Subtração: ${Subtrair(n1, n2)}`);
+            }
+            else if (opcao == 3){
+                n1 = parseInt(prompt("Informe um número: "));
+                n2 = parseInt(prompt("Informe outro número: "));
+                alert(`Resultado da Multiplicação: ${Multiplicar(n1, n2)}`);
+            }
+            else if (opcao == 4){
+                n1 = parseInt(prompt("Informe um número: "));
+                n2 = parseInt(prompt("Informe outro número: "));
+                alert(`Resultado da Divisão: ${Dividir(n1, n2)}`);
+            }
+            else{
+                if (opcao == 0){
+                    break;
+                }
+                else{
+                    alert("Informe uma opção válida!");
+                }
+            }
+
+        }while(opcao != 0);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
